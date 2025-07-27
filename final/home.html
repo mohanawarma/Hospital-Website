@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Care Compass Hospital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- navigation Bar -->
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <h1><span>C</span>are <span>C</span>ompass Hospital</h1>
+        </div>
+        <div class="list">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="test_result.php">Test Result</a></li>
+                <li><a href="doctor.php">Meet out doctors</a></li>
+                <button><a href="appoinment.php">Appoinment</a></button>
+                <button><a href="admin.html">Login</a></button>
+
+            </ul>
+        </div>
+
+    </div>
+</body>
+<!-- navigation bar end -->
+
+
+<!-- Home Page start -->
+
+<style>
+    .front-img img {
+        margin-top: 4%;
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        object-position: 25% 25%;
+        position: absolute;
+        inset: 0;
+        display: block;
+        object-fit: cover;
+        z-index: 1;
+        box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+    }
+
+    .homepage .front-img-text {
+        margin-top: 30%;
+        position: relative;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-bottom: 0;
+        margin-left: 150px;
+        margin-right: 150px;
+        border-top: 4px solid rgb(10, 140, 41);
+        z-index: 3;
+        background-color: whitesmoke;
+        box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+    }
+
+    .homepage .front-img-text h3 {
+        font-size: 50px;
+        padding-bottom: 15px;
+    }
+
+    .homepage .front-img-text p {
+        text-align: justify;
+        margin: 15px 25px;
+        padding: 5px;
+        border: solid 2px rgb(10, 140, 41);
+        border-radius: 10px;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-top: 4px solid rgb(10, 140, 41);
+        font-size: 15px;
+        line-height: 20px;
+        z-index: 3;
+    }
+
+    .blog .heading {
+        text-align: center;
+        font-size: 60px;
+        padding: 1rem;
+        padding-top: 30px;
+        color: rgb(10, 140, 41);
+
+
+    }
+
+    .blog .box-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .blog .box-container .box {
+        justify-items: center;
+        width: 400px;
+        margin: 2rem 1rem;
+        border-radius: .5rem;
+        box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+    }
+
+    .blog .box-container .box img {
+        height: 300px;
+
+    }
+
+    .blog .box-container .box .content {
+        padding: 10px 30px;
+    }
+
+    .blog .box-container .box .content h2 {
+        font-size: xx-large;
+        color: rgb(10, 140, 41);
+    }
+
+    .blog .box-container .box .content p {
+        font-size: medium;
+        color: black;
+    }
+
+    .blog button {
+        height: 40px;
+        width: 200px;
+        background: rgb(10, 140, 41);
+        color: White;
+        font-size: x-large;
+        text-transform: capitalize;
+        border-radius: .5rem;
+        cursor: pointer;
+        margin: 1rem 0;
+        border: .1rem solid rgb(10, 140, 41);
+    }
+
+    .blog button:hover {
+
+        background: white;
+        color: rgb(10, 140, 41);
+    }
+
+    .about {
+        background-color: #f9f9f9;
+    }
+
+    .about .heading {
+        text-align: center;
+        font-size: 60px;
+        padding: 25px;
+        padding-top: 40px;
+        color: rgb(10, 140, 41);
+
+    }
+
+    .about .box-container {
+        padding: 25px 0;
+    }
+
+    .about .box-container .box {
+        width: 70%;
+        margin: 4rem auto;
+        border-radius: .5rem;
+        box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        background: var(--wight);
+    }
+
+    .about .box-container .box .images {
+        padding: 10px;
+        height: 100%;
+        width: 50%;
+    }
+
+    .about .box-container .box .images img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .about .box-container .box .content {
+        height: 100%;
+        width: 50%;
+        padding: 2rem;
+    }
+
+    .about .box-container .box .content h3 {
+        font-size: 3rem;
+        color: rgb(10, 140, 41);
+        display: flex;
+        align-items: start;
+    }
+
+    .about .box-container .box .content p {
+        font-size: 15px;
+        color: black;
+        padding: 1rem 0;
+        text-align: start;
+    }
+
+    .about .box-container .box:nth-child(even) {
+        flex-flow: row-reverse;
+    }
+
+    .about button {
+        height: 40px;
+        width: 200px;
+        background: rgb(10, 140, 41);
+        color: White;
+        font-size: x-large;
+        text-transform: capitalize;
+        border-radius: .5rem;
+        cursor: pointer;
+        margin: 1rem 0;
+        border: .1rem solid rgb(10, 140, 41);
+    }
+
+    .about button:hover {
+
+        background: white;
+        color: rgb(10, 140, 41);
+    }
+</style>
+
+<body>
+    <div class="homepage">
+        <div class="front-img">
+            <img src="Images/front_image.jpg" alt="">
+            <div class="front-img-text">
+                <h3>Welcome to the Care Compass hospital</h3>
+                <p>Welcome to <span>Care Compass</span> Hospitals – You and your loved ones are safe in our
+                    internationally accredited care. Our scope of healthcare services revolves around patient safety and
+                    we offer you highly specialized medical care including tertiary and super specialty care at our
+                    state-of-the-art facilities. At our hospitals in Wattala and Thalawathugoda, you can rest easy while
+                    our practiced and qualified medical staff works around the clock to ensure a superior patient
+                    experience. A panel of over 300 visiting and resident specialist consultants and our teams of care
+                    givers ensure you the best of care for all your health problems. This being the case, we have always
+                    been recognized as one of the leading healthcare providers in Sri Lanka bringing in international
+                    best practices ensuring superior outcomes.
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <div class="blog">
+        <h1 class="heading">Blog</h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="Images/doctor.avif" alt="">
+                <div class="content">
+                    <h2>Diabetes</h2>
+                    <p>Diabetes is a chronic condition that affects millions worldwide, but with the right knowledge and
+                        lifestyle choices, it can be effectively managed. Our blog provides essential insights on
+                        symptoms, causes, prevention tips, and treatment options to help you stay in control of your
+                        health.</p>
+                    <a href="#"> <button class="button">learn more</button></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="Images/doctor.avif" alt="">
+
+                <div class="content">
+                    <h2>Covid-19</h2>
+                    <p>Protect yourself and your loved ones with essential COVID-19 safety measures. Follow proper
+                        hygiene practices, social distancing, mask-wearing, and vaccination guidelines to reduce the
+                        risk of infection.</p>
+                    <a href="#"> <button class="button">learn more</button></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="Images/doctor.avif" alt="">
+
+                <div class="content">
+                    <h2>Prevent epidemic</h2>
+                    <p>Epidemics can spread rapidly, but with the right precautions, we can prevent outbreaks and
+                        protect communities. Follow good hygiene practices, vaccination guidelines, early symptom
+                        detection, and public health measures to minimize risks.</p>
+                    <a href="#"> <button class="button">learn more</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="about" class="about">
+        <h1 class="heading">About our facility</h1>
+        <div class="box-container">
+
+            <!-- start here  -->
+            <div class="box">
+                <!-- about images  -->
+                <div class="images">
+                    <img src="Images/hospital front.jpeg" alt="">
+                </div>
+
+                <!-- about heading & text  -->
+                <div class="content">
+                    <h3>Ambulance services</h3>
+                    <p>Get 24/7 emergency medical assistance with our quick-response ambulance services. Whether it’s a
+                        critical emergency or a routine hospital transfer, we ensure safe, timely, and professional care
+                        when you need it most.</p>
+                    <a href="#"><button class="button">learn more</button></a>
+                </div>
+            </div>
+            <!-- end here  -->
+
+
+            <!-- start here  -->
+            <div class="box">
+                <!-- about images  -->
+                <div class="images">
+                    <img src="Images/hospital front.jpeg" alt="">
+                </div>
+
+                <!-- about heading & text  -->
+                <div class="content">
+                    <h3>Health & Awareness Section </h3>
+                    <p>Our Health Blog & Awareness Section is your go-to source for reliable medical information, expert
+                        health tips, and the latest updates in the healthcare world. We provide well-researched articles
+                        on disease prevention, healthy living, fitness, mental well-being, and medical advancements to
+                        help you make informed health decisions.</p>
+                    <a href="#"><button class="button">learn more</button></a>
+                </div>
+            </div>
+            <!-- end here  -->
+
+
+            <!-- start here  -->
+            <div class="box">
+                <!-- about images  -->
+                <div class="images">
+                    <img src="Images/hospital front.jpeg" alt="">
+                </div>
+
+                <!-- about heading & text  -->
+                <div class="content">
+                    <h3>Pharmacy & Medicine Delivery</h3>
+                    <p>Our Pharmacy & Medicine Delivery service ensures that you get the medicines you need without
+                        stepping out of your home. With a simple online ordering process, you can easily upload your
+                        prescription and have authentic medicines delivered to your doorstep.</p>
+                    <a href="#"><button class="button">learn more</button></a>
+                </div>
+            </div>
+            <!-- end here  -->
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+<!-- Home Page end -->
+
+
+<!-- Footer start -->
+
+<body>
+    <div class="footer">
+        <div class="raw-1">
+            <img src="Images/Logo.png" alt="">
+        </div>
+        <div class="raw-2">
+            <h3>Address</h3>
+            <p>care Compass hospital Hospital (Pvt) Ltd <br>
+                55/1, Kirimandala Mawatha,
+                Narahenpita, Colombo 05
+            <ul>
+                <h3>Branches</h3>
+                <li>Colombo</li>
+                <li>Kurunagala</li>
+                <li>Kandy</li>
+            </ul>
+            </p>
+        </div>
+        <div class="raw-3">
+            <h3>Contact details</h3>
+            <ul>
+                <li>Phone Number: +94 76 005 4371</li>
+                <li>Hospital Number: +94 24 088 4616</li>
+                <li>Email: carecompasshospiptal@gmail.com</li>
+            </ul>
+
+        </div>
+    </div>
+</body>
+<!-- Footer End -->
+
+</html>

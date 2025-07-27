@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Care Compass Hospital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- navigation Bar -->
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <h1><span>C</span>are <span>C</span>ompass Hospital</h1>
+        </div>
+        <div class="list">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="test_result.php">Test Result</a></li>
+                <li><a href="doctor.php">Meet out doctors</a></li>
+                <button><a href="appoinment.html">Appoinment</a></button>
+                <button><a href="admin.html">Login</a></button>
+
+            </ul>
+        </div>
+
+    </div>
+</body>
+<!-- navigation bar end -->
+
+
+<!-- Home Page start -->
+
+<style>
+    .login-body {
+        background-image: url(Images/unnamed\ \(1\).jpg);
+    }
+
+    .login {
+        background-color: whitesmoke;
+
+        padding: 30px 10px;
+        margin: 50px 30%;
+        border-radius: 10px;
+    }
+
+    .login .signin-title {
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        padding: 25px;
+        margin: bottom 8px;
+    }
+
+    .login .input-group {
+        padding-bottom: 10px;
+    }
+
+    .login input {
+        color: inherit;
+        width: 90%;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #757575;
+        margin: 20px;
+        font-size: 15px;
+    }
+
+    .login .btn {
+        font-size: 1.1rem;
+        padding: 8px 0;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        width: 90%;
+        background: rgb(125, 125, 235);
+        color: white;
+        cursor: pointer;
+        transition: 0.9s;
+    }
+
+    .login p {
+        font-size: 1.1rem;
+        margin-top: 0.5rem;
+        text-align: center;
+    }
+</style>
+
+<!-- Home Page end -->
+
+<body class="login-body">
+    <div class="login">
+        <h1 class="signin-title">Sign In</h1>
+        <form method="post" action="insert.php" class="signin-form">
+            <div class="input-group">
+                <input type="text" name="fname" id="ename" placeholder="First name" required>
+            </div>
+            <div class="input-group">
+                <input type="text" name="lname" id="lname" placeholder="Last name" required>
+            </div>
+            <div class="input-group">
+                <input type="text" name="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="input-group">
+                <input type="text" name="password" id="password" placeholder="Password" required>
+            </div>
+            <input type="submit" class="btn" value="Sign Up" name="signUp">
+        </form>
+    </div>
+</body>
+
+<!-- Footer start -->
+
+<body>
+    <div class="footer">
+        <div class="raw-1">
+            <img src="Images/Logo.png" alt="">
+        </div>
+        <div class="raw-2">
+            <h3>Address</h3>
+            <p>care Compass hospital Hospital (Pvt) Ltd <br>
+                55/1, Kirimandala Mawatha,
+                Narahenpita, Colombo 05
+            <ul>
+                <h3>Branches</h3>
+                <li>Colombo</li>
+                <li>Kurunagala</li>
+                <li>Kandy</li>
+            </ul>
+            </p>
+        </div>
+        <div class="raw-3">
+            <h3>Contact details</h3>
+            <ul>
+                <li>Phone Number: +94 76 005 4371</li>
+                <li>Hospital Number: +94 24 088 4616</li>
+                <li>Email: carecompasshospiptal@gmail.com</li>
+            </ul>
+
+        </div>
+    </div>
+</body>
+<!-- Footer End -->
+
+</html>
